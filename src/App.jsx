@@ -36,9 +36,8 @@ function App() {
 
   }
 
-  const countIncrease = (id) => {
-    // const newItems = [...items]
-    setItems([...items, items.filter((item) => item.id === id).quantity--])
+  const countIncrease = (index) => {
+    return true
   }
 
   return (
