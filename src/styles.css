@@ -1,0 +1,51 @@
+* {
+    font-size: 30px;
+}
+
+.app-container {
+    background-color: #bee3ff;
+    min-height: 100vh;
+}
+
+.list-container {
+    width: 30%;
+    background-color: #F5674F;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.30);
+}
+
+.input-container input,
+.input-container svg {
+    border: none;
+    background: #fbc1bb;
+    border-radius: 3px;
+    color: #ec645b;
+}
+
+.input-container input {
+    outline: 0;
+    width: 100%;
+    border-radius: 3px 0 0 3px;
+}
+
+.input-container svg {
+    border-radius: 0px 3px 3px 0px;
+    min-height: 100%;
+}
+
+.item{
+    border-bottom: 2px solid #ff877a;
+}
+
+.item button {
+    width: 50px;
+    background-color: white;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.cout-item button{
+    border-radius: 25px;
+    width: 90px;
+}
