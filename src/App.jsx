@@ -21,7 +21,7 @@ function App() {
 
   const handleAddItem = () => {
 
-    if(inputValue === ''){
+    if(inputValue.trim() !== ''){
       const newItem = {
         itemName: inputValue,
         quantity: 1,
@@ -52,7 +52,7 @@ function App() {
                   onChange={(e) => setInputValue(e.target.value)}
                   value={inputValue}
                 />
-                <FontAwesomeIcon icon={faPlus} />
+                <FontAwesomeIcon icon={faPlus} onClick={() => {handleAddItem()}} />
             </div>
 
             {
