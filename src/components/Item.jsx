@@ -4,14 +4,17 @@ import { faCircle, faCheckCircle, faPlus, faMinus } from '@fortawesome/free-soli
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles.css';
 
-export const Item = ({name, quantity, selected}) => {
+export const Item = ({name, quantity, selected, id, setItems, countIncrease}) => {
     return (
         <>
             <div className='item-container'>
 
                 <div className='item my-2 pb-1 d-flex justify-content-between'>
                     <div className='name'>
-                        <FontAwesomeIcon icon={faCircle} />
+                        <FontAwesomeIcon 
+                            icon={faCircle} 
+                            onClick={() => countIncrease(id)}
+                        />
                         <span className='ms-2'>{name}</span>
                     </div>
                     <div className='button-item d-flex justify-content-center align-items-center'>
