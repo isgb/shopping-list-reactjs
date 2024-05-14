@@ -38,9 +38,7 @@ function App() {
 
   const countIncrease = (id) => {
     // const newItems = [...items]
-    // setItems([...items, items.filter((item) => item.id === id)])
-    // let test = items.filter((item) => item.id === id);
-    console.log(id);
+    setItems([...items, items.filter((item) => item.id === id).quantity--])
   }
 
   return (

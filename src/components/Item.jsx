@@ -20,10 +20,12 @@ export const Item = ({name, quantity, selected, id, setItems, countIncrease}) =>
                     <div className='button-item d-flex justify-content-center align-items-center'>
                         <FontAwesomeIcon 
                            icon={faMinus} 
-                           onClick={() => countIncrease(id)}
                         />
                         <span className='mx-2'>{quantity}</span>
-                        <FontAwesomeIcon icon={faPlus} />
+                        <FontAwesomeIcon 
+                          icon={faPlus}
+                          onClick={() => countIncrease(id)} 
+                        />
                     </div>
                 </div>
 
