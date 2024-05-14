@@ -4,7 +4,7 @@ import { faCircle, faCheckCircle, faPlus, faMinus } from '@fortawesome/free-soli
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles.css';
 
-export const Item = ({name, quantity, selected, id,
+export const Item = ({name, count, selected, id,
                       index, setItems, countIncrease}) => {
     // console.log(id)
     return (
@@ -22,7 +22,7 @@ export const Item = ({name, quantity, selected, id,
                         <FontAwesomeIcon 
                            icon={faMinus} 
                         />
-                        <span className='mx-2'>{quantity}</span>
+                        <span className='mx-2'>{count}</span>
                         <FontAwesomeIcon 
                           icon={faPlus}
                           onClick={() => countIncrease(index)} 
