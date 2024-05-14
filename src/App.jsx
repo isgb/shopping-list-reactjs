@@ -39,8 +39,8 @@ function App() {
   const countIncrease = (id) => {
     // const newItems = [...items]
     // setItems([...items, items.filter((item) => item.id === id)])
-    let test = items.filter((item) => item.id === id);
-    console.log(test);
+    // let test = items.filter((item) => item.id === id);
+    console.log(id);
   }
 
   return (
@@ -69,8 +69,8 @@ function App() {
                     quantity={item.quantity}
                     selected={item.selected}
                     id={item.id}
-                    items 
-                    setItems
+                    setItems={setItems}
+                    countIncrease={countIncrease}
                   /> 
               ))
             }

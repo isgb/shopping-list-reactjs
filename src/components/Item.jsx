@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles.css';
 
 export const Item = ({name, quantity, selected, id, setItems, countIncrease}) => {
+    // console.log(id)
     return (
         <>
             <div className='item-container'>
