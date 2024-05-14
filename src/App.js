@@ -51,8 +51,8 @@ function App() {
 
             </div>
 
-            <div className='count-items'>
-
+            <div className='count-items d-flex justify-content-end mb-3'>
+                <span>Total : 3</span>
             </div>
           </div>
 
