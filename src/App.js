@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faCheckCircle, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faCheckCircle, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
@@ -18,7 +18,7 @@ function App() {
         <div className='list-container container'>
           <div className='row'>
 
-            <div className='input-container my-2 d-flex justify-content-center align-items-center'>
+            <div className='input-container mt-4 mb-2 d-flex justify-content-center align-items-center'>
               <input type='text' placeholder='Add and item' />
               <FontAwesomeIcon icon={faPlus} />
             </div>
@@ -32,23 +32,95 @@ function App() {
                     <FontAwesomeIcon icon={faCircle} />
                     <span className='ms-2'>Item 1</span>
                   </div>
-                  <div className='button-item'>
-                    <button>1</button>
+                  <div className='button-item d-flex justify-content-center align-items-center'>
+                    <FontAwesomeIcon icon={faMinus} /> 
+                        <span className='mx-2'>1</span> 
+                    <FontAwesomeIcon icon={faPlus} />
                   </div>
                 </div>
+
+              </div>
+
+              <div className='item-container'>
 
                 <div className='item my-2 pb-1 d-flex justify-content-between'>
                   <div className='name'>
                     <FontAwesomeIcon icon={faCircle} />
                     <span className='ms-2'>Item 1</span>
                   </div>
-                  <div className='button-item'>
-                    <button>1</button>
+                  <div className='button-item d-flex justify-content-center align-items-center'>
+                    <FontAwesomeIcon icon={faMinus} /> 
+                        <span className='mx-2'>1</span> 
+                    <FontAwesomeIcon icon={faPlus} />
                   </div>
                 </div>
 
               </div>
+              
+              <div className='item-container'>
 
+                <div className='item my-2 pb-1 d-flex justify-content-between'>
+                  <div className='name'>
+                    <FontAwesomeIcon icon={faCircle} />
+                    <span className='ms-2'>Item 1</span>
+                  </div>
+                  <div className='button-item d-flex justify-content-center align-items-center'>
+                    <FontAwesomeIcon icon={faMinus} /> 
+                        <span className='mx-2'>1</span> 
+                    <FontAwesomeIcon icon={faPlus} />
+                  </div>
+                </div>
+
+              </div>
+              
+              <div className='item-container'>
+
+                <div className='item my-2 pb-1 d-flex justify-content-between'>
+                  <div className='name'>
+                    <FontAwesomeIcon icon={faCircle} />
+                    <span className='ms-2'>Item 1</span>
+                  </div>
+                  <div className='button-item d-flex justify-content-center align-items-center'>
+                    <FontAwesomeIcon icon={faMinus} /> 
+                        <span className='mx-2'>1</span> 
+                    <FontAwesomeIcon icon={faPlus} />
+                  </div>
+                </div>
+
+              </div>
+              
+              <div className='item-container'>
+
+                <div className='item my-2 pb-1 d-flex justify-content-between'>
+                  <div className='name'>
+                    <FontAwesomeIcon icon={faCircle} />
+                    <span className='ms-2'>Item 1</span>
+                  </div>
+                  <div className='button-item d-flex justify-content-center align-items-center'>
+                    <FontAwesomeIcon icon={faMinus} /> 
+                        <span className='mx-2'>1</span> 
+                    <FontAwesomeIcon icon={faPlus} />
+                  </div>
+                </div>
+
+              </div>
+              
+              <div className='item-container'>
+
+                <div className='item my-2 pb-1 d-flex justify-content-between'>
+                  <div className='name'>
+                    <FontAwesomeIcon icon={faCircle} />
+                    <span className='ms-2'>Item 1</span>
+                  </div>
+                  <div className='button-item d-flex justify-content-center align-items-center'>
+                    <FontAwesomeIcon icon={faMinus} /> 
+                        <span className='mx-2'>1</span> 
+                    <FontAwesomeIcon icon={faPlus} />
+                  </div>
+                </div>
+
+              </div>
+              
             </div>
 
             <div className='count-items d-flex justify-content-end mb-3'>

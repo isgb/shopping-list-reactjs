@@ -32,9 +32,10 @@
 .input-container svg {
     border-radius: 0px 3px 3px 0px;
     min-height: 100%;
+    cursor: pointer;
 }
 
-.item{
+.item {
     border-bottom: 2px solid #ff877a;
 }
 
@@ -45,7 +46,17 @@
     border-radius: 10px;
 }
 
-.cout-item button{
+.button-item svg {
+    height: 15px;
+    background-color: white;
+    color: #F5674F;
+    border-radius: 24px;
+    padding: 6px;
+    width: 22%;
+    cursor: pointer;
+}
+
+.cout-item button {
     border-radius: 25px;
     width: 90px;
 }
