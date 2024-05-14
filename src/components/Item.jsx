@@ -13,12 +13,14 @@ export const Item = ({name, quantity, selected, id, setItems, countIncrease}) =>
                     <div className='name'>
                         <FontAwesomeIcon 
                             icon={faCircle} 
-                            onClick={() => countIncrease(id)}
                         />
                         <span className='ms-2'>{name}</span>
                     </div>
                     <div className='button-item d-flex justify-content-center align-items-center'>
-                        <FontAwesomeIcon icon={faMinus} />
+                        <FontAwesomeIcon 
+                           icon={faMinus} 
+                           onClick={() => countIncrease(id)}
+                        />
                         <span className='mx-2'>{quantity}</span>
                         <FontAwesomeIcon icon={faPlus} />
                     </div>
