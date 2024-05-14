@@ -1,17 +1,18 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faCheckCircle, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { Item } from './components/Item';
+import { useState } from 'react';
+import { Input } from './components/Input';
+import { CountItems } from './components/CountItems';
 
 function App() {
 
-  const items = [
+  const [items, setItems] = useState([
     { itemName: 'item 1', quantity: 1, selected: false },
     { itemName: 'item 2', quantity: 3, selected: true },
     { itemName: 'item 3', quantity: 2, selected: false },
-    { itemName: 'item 3', quantity: 2, selected: false },
-  ];
+  ])
 
   return (
     <>
@@ -20,10 +21,7 @@ function App() {
         <div className='list-container container'>
           <div className='row'>
 
-            <div className='input-container mt-4 mb-2 d-flex justify-content-center align-items-center'>
-              <input type='text' placeholder='Add and item' />
-              <FontAwesomeIcon icon={faPlus} />
-            </div>
+            <Input/>
 
             {
               items.map((item,index) => (
@@ -38,9 +36,9 @@ function App() {
 
             {/* <Item /> */}
 
-            <div className='count-items d-flex justify-content-end mb-3'>
-                <span>Total : {(items.length !== 0) ? items.length : 0 }</span>
-            </div>
+           <CountItems
+              countItems={items.length}
+           />
 
           </div>
 
