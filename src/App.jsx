@@ -37,7 +37,11 @@ function App() {
   }
 
   const countIncrease = (index) => {
-    return true
+    const newItems = [...items];
+
+		newItems[index].quantity++;
+
+		setItems(newItems);
   }
 
   return (
@@ -61,7 +65,8 @@ function App() {
             {
               items.map((item,index) => (
                   <Item 
-                    key={index}
+                    key={item.id}
+                    index={index}
                     name={item.itemName}
                     quantity={item.quantity}
                     selected={item.selected}
