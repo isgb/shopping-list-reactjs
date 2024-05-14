@@ -12,9 +12,9 @@ import { CountItems } from './components/CountItems';
 function App() {
 
   const [items, setItems] = useState([
-    { id:1,itemName: 'item 1', count: 1, selected: false },
-    { id:2,itemName: 'item 2', count: 3, selected: true },
-    { id:3,itemName: 'item 3', count: 2, selected: false },
+    { id:1, itemName: 'Platano Kg', count: 1, selected: false },
+    { id:2, itemName: 'Manzana Kg', count: 3, selected: true },
+    { id:3, itemName: 'Leche', count: 2, selected: false },
   ])
 
   const [inputValue, setInputValue] = useState('');
@@ -63,7 +63,7 @@ function App() {
             {
               items.map((item,index) => (
                   <Item 
-                    key={item.id}
+                    key={index}
                     index={index}
                     name={item.itemName}
                     count={item.count}
