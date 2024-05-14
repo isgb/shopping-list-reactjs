@@ -1,6 +1,9 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle, faCheckCircle, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { Item } from './components/Item';
 import { useState } from 'react';
 import { Input } from './components/Input';
@@ -14,6 +17,26 @@ function App() {
     { itemName: 'item 3', quantity: 2, selected: false },
   ])
 
+  const [inputValue, setInputValue] = useState('');
+
+  const handleAddItem = () => {
+
+    if(inputValue === ''){
+      const newItem = {
+        itemName: inputValue,
+        quantity: 1,
+        selected: false
+      }
+  
+      setItems([
+        ...items,
+        newItem
+      ]);
+      setInputValue('');
+    }
+
+  }
+
   return (
     <>
       <div className='app-container d-flex justify-content-center align-items-center'>
@@ -21,7 +44,16 @@ function App() {
         <div className='list-container container'>
           <div className='row'>
 
-            <Input/>
+            {/* <Input/> */}
+            <div className='input-container mt-4 mb-2 d-flex justify-content-center align-items-center'>
+                <input 
+                  type='text' 
+                  placeholder='Add and item' 
+                  onChange={(e) => setInputValue(e.target.value)}
+                  value={inputValue}
+                />
+                <FontAwesomeIcon icon={faPlus} />
+            </div>
 
             {
               items.map((item,index) => (
@@ -33,8 +65,6 @@ function App() {
                   /> 
               ))
             }
-
-            {/* <Item /> */}
 
            <CountItems
               countItems={items.length}
