@@ -65,7 +65,7 @@ function App() {
             <div className='input-container mt-4 mb-2 d-flex justify-content-center align-items-center'>
                 <input 
                   type='text' 
-                  placeholder='Add and item' 
+                  placeholder='Add an item' 
                   onChange={(e) => setInputValue(e.target.value)}
                   value={inputValue}
                 />
