@@ -70,11 +70,17 @@
     .app-container{
         background-color: #F5674F;
     }
+    *{
+        font-size: 8px;
+    }
 }
 
 @media (min-width: 576px) { 
     .app-container{
         background-color: blue;
+    }
+    *{
+        font-size: 10px;
     }
 }
 
