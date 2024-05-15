@@ -10,7 +10,13 @@ export const AppContainer = () => {
 
     return (
         <>
-            <div className='app-container d-flex justify-content-center align-items-center'>
+            <div className='app-container d-flex 
+                            justify-content-sm-center 
+                            justify-content-md-center 
+                            justify-content-lg-center 
+                            justify-content-xl-center 
+                            justify-content-xxl-center 
+                            align-items-sm-center'>
 
                 <div className='list-container container'>
                     <div className='row'>
