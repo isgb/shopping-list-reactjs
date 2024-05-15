@@ -11,6 +11,7 @@ export const AppContainer = () => {
     return (
         <>
             <div className='app-container d-flex 
+                            justify-content-center
                             justify-content-sm-center 
                             justify-content-md-center 
                             justify-content-lg-center 
