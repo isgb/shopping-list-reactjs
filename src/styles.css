@@ -62,34 +62,38 @@
     width: 90px;
 }
 
+.name{
+    width: 50%;
+}
+
 .name svg{
     cursor:pointer;
 }
 
 @media (max-width: 576px) { 
-    .app-container{
-        background-color: #F5674F;
-    }
     *{
         font-size: 8px;
+    }
+    .app-container{
+        background-color: #F5674F;
     }
 }
 
 @media (min-width: 576px) { 
-    .app-container{
-        background-color: blue;
-    }
     *{
         font-size: 10px;
+    }
+    .app-container{
+        background-color: blue;
     }
 }
 
 @media (min-width: 768px) { 
-    .app-container{
-        background-color: red;
-    }
     *{
         font-size: 10px;
+    }
+    .app-container{
+        background-color: red;
     }
 }
 
@@ -112,46 +116,10 @@
 }
 
 @media (min-width: 1400px) { 
-    * {
+    *{
         font-size: 30px;
     }
     .app-container{
         background-color: black;
     }
 }
-
-/* @media only screen and (min-width: 1400px) {
-    * {
-        font-size: 30px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    * {
-        font-size: 23px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    * {
-        font-size: 17px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    * {
-        font-size: 12px;
-    }
-}
-
-@media only screen and (min-width: 576px) {
-    * {
-        font-size: 9px;
-    }
-}
-
-@media only screen and (max-width: 575px) {
-    * {
-        font-size: 9px;
-    }
-} */
