@@ -1,11 +1,8 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faCheckCircle, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import { Item } from './components/Item';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { Input } from './components/Input';
 import { CountItems } from './components/CountItems';
 import { DataItemsContext } from './context/DataItemsContext';
@@ -20,7 +17,7 @@ function App() {
 
         <div className='list-container container'>
           <div className='row'>
-            
+
             <Input/>
 
             {
