@@ -4,11 +4,7 @@ export const DataItemsContext = createContext();
 
 export const DataItemsProvider = ({children}) => {
 
-    const [items, setItems] = useState([
-        { id:1, itemName: 'Platano Kg', count: 1, selected: false },
-        { id:2, itemName: 'Manzana Kg', count: 3, selected: true },
-        { id:3, itemName: 'Leche', count: 2, selected: false },
-      ])
+    const [items, setItems] = useState([])
     
       const [inputValue, setInputValue] = useState('');
     
