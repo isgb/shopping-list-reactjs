@@ -33,13 +33,26 @@ function App() {
       ]);
       setInputValue('');
     }
+  }
 
+  const handleChangeSelected = (index) => {
+    const updateditems = [...items];
+     updateditems[index].selected = !updateditems[index].selected ;
+      setItems(updateditems);
   }
 
   const countIncrease = (index) => {
     const updateditems = [...items];
 		updateditems[index].count++;
 		setItems(updateditems);
+  }
+
+  const countDecrease = (index) => {
+    const updateditems = [...items];
+    if(updateditems[index].count > 0){
+      updateditems[index].count--;
+      setItems(updateditems);
+    }
   }
 
   return (
@@ -49,7 +62,6 @@ function App() {
         <div className='list-container container'>
           <div className='row'>
 
-            {/* <Input/> */}
             <div className='input-container mt-4 mb-2 d-flex justify-content-center align-items-center'>
                 <input 
                   type='text' 
@@ -71,6 +83,8 @@ function App() {
                     id={item.id}
                     setItems={setItems}
                     countIncrease={countIncrease}
+                    countDecrease={countDecrease}
+                    handleChangeSelected={handleChangeSelected}
                   /> 
               ))
             }

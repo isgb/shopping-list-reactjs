@@ -61,3 +61,7 @@
     border-radius: 25px;
     width: 90px;
 }
+
+.name svg{
+    cursor:pointer;
+}
