@@ -82,26 +82,37 @@
     .app-container{
         background-color: red;
     }
+    *{
+        font-size: 10px;
+    }
 }
 
 @media (min-width: 992px) { 
+    * {
+        font-size: 14px;
+    }
     .app-container{
         background-color: yellow;
     }
 }
 
 @media (min-width: 1200px) { 
+    *{
+        font-size: 20px;
+    }
     .app-container{
         background-color: green;
     }
 }
 
 @media (min-width: 1400px) { 
+    * {
+        font-size: 30px;
+    }
     .app-container{
         background-color: black;
     }
 }
-
 
 /* @media only screen and (min-width: 1400px) {
     * {
