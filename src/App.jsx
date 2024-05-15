@@ -7,7 +7,7 @@ import { Input } from './components/Input';
 import { CountItems } from './components/CountItems';
 import { DataItemsContext } from './context/DataItemsContext';
 
-function App() {
+const App = () => {
 
   const {items} = useContext(DataItemsContext);
 
