@@ -83,20 +83,25 @@
 
 @media (min-width: 576px) { 
     *{
-        font-size: 10px;
+        font-size: 18px;
     }
-    .app-container{
+    
+    .list-container {
+        width: 54%;
+    }
+
+    /* .app-container{
         background-color: blue;
-    }
+    } */
 }
 
 @media (min-width: 768px) { 
     *{
-        font-size: 10px;
+        font-size: 24px;
     }
-    .app-container{
+    /* .app-container{
         background-color: red;
-    }
+    } */
 }
 
 @media (min-width: 992px) { 

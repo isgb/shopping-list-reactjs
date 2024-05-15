@@ -18,7 +18,7 @@ export const Item = ({ name, count, selected, index }) => {
                             icon={(!selected) ? faCircle : faCheckCircle}
                             onClick={() => handleChangeSelected(index)}
                         />
-                        <span className={(!selected) ? 'ms-2' : 'text-decoration-line-through ms-2'} >{name}</span>
+                        <span className={(!selected) ? 'ms-2 text-break' : 'text-decoration-line-through ms-2 text-break'} >{name}</span>
                     </div>
                     <div className='button-item d-flex justify-content-center align-items-center'>
                         <FontAwesomeIcon
