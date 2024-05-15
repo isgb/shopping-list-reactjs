@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { DataItemsContext } from '../context/DataItemsContext';
 
-export const Input = () => {
+export const InputText = () => {
 
     const { inputValue, setInputValue, handleAddItem } = useContext(DataItemsContext);
 

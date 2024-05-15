@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Input } from './Input'
+import { InputText } from './InputText'
 import { Item } from './Item'
 import { CountItems } from './CountItems'
 import { DataItemsContext } from '../context/DataItemsContext'
@@ -15,7 +15,7 @@ export const AppContainer = () => {
                 <div className='list-container container'>
                     <div className='row'>
 
-                        <Input />
+                        <InputText/>
 
                         {
                             items.map((item, index) => (
