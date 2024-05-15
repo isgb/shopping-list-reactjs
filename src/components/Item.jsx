@@ -6,8 +6,8 @@ import '../styles.css';
 
 export const Item = ({name, count, selected, id,
                       index, setItems, 
-                      countIncrease, countDecrease, handleChangeSelected}) => {
-    // console.log(id)
+                      countIncrease, countDecrease, 
+                      handleChangeSelected}) => {
     return (
         <>
             <div className='item-container'>
@@ -18,7 +18,7 @@ export const Item = ({name, count, selected, id,
                             icon={(!selected) ? faCircle : faCheckCircle}
                            onClick={() => handleChangeSelected(index)} 
                         />
-                        <span className='ms-2'>{name}</span>
+                        <span className={(!selected) ? 'ms-2' : 'text-decoration-line-through ms-2'} >{name}</span>
                     </div>
                     <div className='button-item d-flex justify-content-center align-items-center'>
                         <FontAwesomeIcon 
