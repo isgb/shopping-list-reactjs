@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faCheckCircle, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles.css';
+import { DataItemsContext } from '../context/DataItemsContext';
 
-export const Item = ({name, count, selected, id,
-                      index, setItems, 
-                      countIncrease, countDecrease, 
-                      handleChangeSelected}) => {
+export const Item = ({name, count, selected, index }) => 
+{
+    const {handleChangeSelected,countDecrease,countIncrease} = useContext(DataItemsContext);
+
     return (
         <>
             <div className='item-container'>

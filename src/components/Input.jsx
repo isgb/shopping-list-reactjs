@@ -1,15 +1,27 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faCheckCircle, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
+import React, { useContext } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { DataItemsContext } from '../context/DataItemsContext';
 
 export const Input = () => {
+
+    const {inputValue, setInputValue, handleAddItem} = useContext(DataItemsContext);
+
     return (
         <>
-            <div className='input-container mt-4 mb-2 d-flex justify-content-center align-items-center'>
-                <input type='text' placeholder='Add and item' />
-                <FontAwesomeIcon icon={faPlus} />
+           <div className='input-container mt-4 mb-2 d-flex justify-content-center align-items-center'>
+                <input 
+                  type='text' 
+                  placeholder='Add an item' 
+                  onChange={(e) => setInputValue(e.target.value)}
+                  value={inputValue}
+                />
+                <FontAwesomeIcon 
+                  icon={faPlus} 
+                  onClick={() => {handleAddItem()}} 
+                />
             </div>
         </>
     )
