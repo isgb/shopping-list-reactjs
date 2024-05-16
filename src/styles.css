@@ -110,7 +110,7 @@
     }
    
     .list-container {
-        width: 35%;
+        width: 40%;
     }
     /* .app-container{
         background-color: yellow;
@@ -119,7 +119,7 @@
 
 @media (min-width: 1200px) { 
     *{
-        font-size: 20px;
+        font-size: 30px;
     }
     .app-container{
         background-color: green;
