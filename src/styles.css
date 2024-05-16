@@ -106,11 +106,15 @@
 
 @media (min-width: 992px) { 
     * {
-        font-size: 14px;
+        font-size: 20px;
     }
-    .app-container{
+   
+    .list-container {
+        width: 35%;
+    }
+    /* .app-container{
         background-color: yellow;
-    }
+    } */
 }
 
 @media (min-width: 1200px) { 
