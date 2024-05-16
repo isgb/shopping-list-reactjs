@@ -62,16 +62,16 @@
     width: 90px;
 }
 
-.name{
+.name {
     width: 60%;
 }
 
-.name svg{
-    cursor:pointer;
+.name svg {
+    cursor: pointer;
 }
 
-@media (max-width: 576px) { 
-    *{
+@media (max-width: 576px) {
+    * {
         font-size: 22px;
     }
 
@@ -81,56 +81,42 @@
     }
 }
 
-@media (min-width: 576px) { 
-    *{
+@media (min-width: 576px) {
+    * {
         font-size: 18px;
     }
-    
+
     .list-container {
         width: 54%;
     }
 
-    /* .app-container{
-        background-color: blue;
-    } */
 }
 
-@media (min-width: 768px) { 
-    *{
+@media (min-width: 768px) {
+    * {
         font-size: 24px;
     }
-    /* .app-container{
-        background-color: red;
-    } */
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     * {
         font-size: 20px;
     }
-   
+
     .list-container {
         width: 40%;
     }
-    /* .app-container{
-        background-color: yellow;
-    } */
 }
 
-@media (min-width: 1200px) { 
-    *{
+@media (min-width: 1200px) {
+    * {
         font-size: 30px;
-    }
-    .app-container{
-        background-color: green;
     }
 }
 
-@media (min-width: 1400px) { 
-    *{
+@media (min-width: 1400px) {
+    * {
         font-size: 30px;
     }
-    .app-container{
-        background-color: black;
-    }
+
 }
