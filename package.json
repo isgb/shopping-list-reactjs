@@ -1,7 +1,7 @@
 {
   "name": "shopping-list",
   "version": "0.1.0",
-  "main": "index.js",
+  "private": true,
   "homepage": "http://isgb.github.io/shopping-list-reactjs",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
